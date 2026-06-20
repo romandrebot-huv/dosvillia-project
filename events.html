@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Дозвілля міста | Заходи</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="events">
+  <header class="top-header">
+    <nav class="navbar container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">◆</span>
+        <span>City Leisure</span>
+      </a>
+
+      <button class="menu-button" id="menuButton" aria-label="Відкрити меню">☰</button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link">Головна</a>
+        <a href="objects.html" class="nav-link">Об'єкти</a>
+        <a href="events.html" class="nav-link active">Заходи 14 днів</a>
+        <a href="search.html" class="nav-link">Пошук за типом</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="container page-hero small-hero">
+      <p class="eyebrow">Запит №2</p>
+      <h1>Заходи на найближчі 14 днів</h1>
+      <p>
+        Система показує дату, назву заходу, назву об'єкта та адресу проведення.
+      </p>
+    </section>
+
+    <section class="container content-section">
+      <div class="toolbar">
+        <div>
+          <h2>Майбутні заходи</h2>
+          <p id="eventsCount" class="muted-text">Завантаження даних...</p>
+        </div>
+        <button class="refresh-button" id="refreshEvents">Оновити</button>
+      </div>
+
+      <div id="eventsMessage" class="message-box hidden"></div>
+
+      <div class="cards-grid" id="eventsGrid">
+        <article class="event-card loading-card">
+          <p>Завантаження заходів...</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2026 City Leisure. Практична робота.</p>
+      <p>Заходи на найближчі 14 днів</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Дозвілля міста | Головна</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="home">
+  <header class="top-header">
+    <nav class="navbar container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">◆</span>
+        <span>City Leisure</span>
+      </a>
+
+      <button class="menu-button" id="menuButton" aria-label="Відкрити меню">☰</button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link active">Головна</a>
+        <a href="objects.html" class="nav-link">Об'єкти</a>
+        <a href="events.html" class="nav-link">Заходи 14 днів</a>
+        <a href="search.html" class="nav-link">Пошук за типом</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">Практична робота</p>
+          <h1>Автоматизована інформаційна система «Місця проведення дозвілля громадян»</h1>
+          <p class="hero-text">
+            Сайт призначений для обліку міських об'єктів дозвілля: клубів, спортзалів,
+            кінотеатрів, концертних майданчиків, більярдних клубів та інших місць відпочинку.
+            Дані завантажуються з бази Supabase через API.
+          </p>
+
+          <div class="hero-actions">
+            <a class="primary-button" href="objects.html">Переглянути об'єкти</a>
+            <a class="secondary-button" href="events.html">Заходи на 14 днів</a>
+          </div>
+        </div>
+
+        <div class="hero-card glass-card">
+          <div class="card-header">
+            <span class="status-dot"></span>
+            <span>Live Supabase API</span>
+          </div>
+          <h2>Можливості системи</h2>
+          <ul class="feature-list">
+            <li>Облік діючих об'єктів дозвілля</li>
+            <li>Пошук об'єктів за типом</li>
+            <li>Перегляд майбутніх заходів</li>
+            <li>Адаптивний сучасний дизайн</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="container stats-section">
+      <div class="section-title-block">
+        <p class="eyebrow">Панель огляду</p>
+        <h2>Коротка інформація з бази даних</h2>
+        <p>Ці показники автоматично завантажуються із Supabase.</p>
+      </div>
+
+      <div class="stats-grid" id="homeStats">
+        <article class="stat-card skeleton-card">
+          <span class="stat-number">—</span>
+          <span class="stat-label">Діючих об'єктів</span>
+        </article>
+        <article class="stat-card skeleton-card">
+          <span class="stat-number">—</span>
+          <span class="stat-label">Заходів на 14 днів</span>
+        </article>
+        <article class="stat-card skeleton-card">
+          <span class="stat-number">—</span>
+          <span class="stat-label">Типів об'єктів</span>
+        </article>
+      </div>
+
+      <div id="homeMessage" class="message-box hidden"></div>
+    </section>
+
+    <section class="container info-section">
+      <div class="info-card">
+        <h3>Предметна область</h3>
+        <p>
+          Інформаційна система зберігає дані про об'єкти міста, їх власників,
+          статус роботи, популярність серед населення та заплановані заходи.
+        </p>
+      </div>
+
+      <div class="info-card">
+        <h3>Основні запити</h3>
+        <p>
+          На сайті реалізовано список діючих об'єктів, список заходів на найближчі
+          14 днів та пошук об'єктів за заданим типом.
+        </p>
+      </div>
+
+      <div class="info-card">
+        <h3>Технології</h3>
+        <p>
+          Проєкт створено на HTML, CSS, JavaScript та Supabase. Усі дані беруться
+          з таблиць бази даних через API.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2026 City Leisure. Практична робота.</p>
+      <p>HTML • CSS • JavaScript • Supabase</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="script.js" defer></script>
+</body>
+</html>

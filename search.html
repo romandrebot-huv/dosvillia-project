@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Дозвілля міста | Пошук</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="search">
+  <header class="top-header">
+    <nav class="navbar container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">◆</span>
+        <span>City Leisure</span>
+      </a>
+
+      <button class="menu-button" id="menuButton" aria-label="Відкрити меню">☰</button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link">Головна</a>
+        <a href="objects.html" class="nav-link">Об'єкти</a>
+        <a href="events.html" class="nav-link">Заходи 14 днів</a>
+        <a href="search.html" class="nav-link active">Пошук за типом</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="container page-hero small-hero">
+      <p class="eyebrow">Запит №3</p>
+      <h1>Пошук об'єктів за типом</h1>
+      <p>
+        Введіть тип об'єкта, наприклад: кінотеатр, спортзал, клуб, танцзал або більярдний клуб.
+      </p>
+    </section>
+
+    <section class="container content-section">
+      <form class="search-panel" id="searchForm">
+        <label for="typeInput">Тип об'єкта</label>
+        <div class="search-row">
+          <input
+            type="text"
+            id="typeInput"
+            placeholder="Наприклад: кінотеатр"
+            autocomplete="off"
+          />
+          <button type="submit" class="primary-button">Знайти</button>
+        </div>
+        <div id="typeChips" class="chip-list"></div>
+      </form>
+
+      <div class="toolbar search-toolbar">
+        <div>
+          <h2>Результати пошуку</h2>
+          <p id="searchCount" class="muted-text">Введіть тип об'єкта для пошуку.</p>
+        </div>
+      </div>
+
+      <div id="searchMessage" class="message-box hidden"></div>
+
+      <div class="cards-grid" id="searchResults">
+        <article class="empty-card">
+          <h3>Пошук ще не виконано</h3>
+          <p>Введіть тип об'єкта або натисніть на одну з підказок.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2026 City Leisure. Практична робота.</p>
+      <p>Пошук об'єктів за типом</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="script.js" defer></script>
+</body>
+</html>

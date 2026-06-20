@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Дозвілля міста | Об'єкти</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="objects">
+  <header class="top-header">
+    <nav class="navbar container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">◆</span>
+        <span>City Leisure</span>
+      </a>
+
+      <button class="menu-button" id="menuButton" aria-label="Відкрити меню">☰</button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link">Головна</a>
+        <a href="objects.html" class="nav-link active">Об'єкти</a>
+        <a href="events.html" class="nav-link">Заходи 14 днів</a>
+        <a href="search.html" class="nav-link">Пошук за типом</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="container page-hero small-hero">
+      <p class="eyebrow">Запит №1</p>
+      <h1>Список діючих об'єктів дозвілля</h1>
+      <p>
+        Виводяться тільки ті об'єкти, які на поточну дату мають активний статус роботи.
+      </p>
+    </section>
+
+    <section class="container content-section">
+      <div class="toolbar">
+        <div>
+          <h2>Діючі об'єкти</h2>
+          <p id="objectsCount" class="muted-text">Завантаження даних...</p>
+        </div>
+        <button class="refresh-button" id="refreshObjects">Оновити</button>
+      </div>
+
+      <div id="objectsMessage" class="message-box hidden"></div>
+
+      <div class="table-card">
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Тип</th>
+                <th>Назва</th>
+                <th>Адреса</th>
+                <th>Місць</th>
+                <th>Власник</th>
+              </tr>
+            </thead>
+            <tbody id="objectsTableBody">
+              <tr>
+                <td colspan="5" class="loading-cell">Завантаження...</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2026 City Leisure. Практична робота.</p>
+      <p>Список діючих об'єктів</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
