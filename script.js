@@ -2,7 +2,7 @@ const SUPABASE_URL = "https://cqjfoneyzpaggctmewyk.supabase.co";
 
 // ВАЖЛИВО: сюди потрібно вставити anon public key із Supabase.
 // Supabase Dashboard -> Project Settings -> API -> Project API keys -> anon public.
-const SUPABASE_ANON_KEY = "PASTE_YOUR_SUPABASE_ANON_KEY_HERE";
+const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNxamZvbmV5enBhZ2djdG1ld3lrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODExMTIwMzUsImV4cCI6MjA5NjY4ODAzNX0.khlC7--yIgwozuI5GeqPomJin7TRv3ZW-jRwbmWSsfo";
 
 const db = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
