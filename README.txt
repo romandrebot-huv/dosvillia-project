@@ -12,31 +12,6 @@
 6. script.js       - JavaScript і підключення до Supabase
 7. supabase.sql    - створення таблиць і тестові дані
 
-КРОК 1. Створити таблиці в Supabase
-1. Відкрити свій проєкт Supabase.
-2. Зліва натиснути SQL Editor.
-3. Натиснути New query.
-4. Вставити весь код із файлу supabase.sql.
-5. Натиснути Run.
-
-КРОК 2. Вставити anon key
-1. Відкрити Supabase Dashboard.
-2. Перейти в Project Settings.
-3. Відкрити API.
-4. Знайти Project API keys.
-5. Скопіювати ключ anon public.
-6. Відкрити файл script.js.
-7. Знайти рядок:
-   const SUPABASE_ANON_KEY = "PASTE_YOUR_SUPABASE_ANON_KEY_HERE";
-8. Замість PASTE_YOUR_SUPABASE_ANON_KEY_HERE вставити свій ключ.
-
-КРОК 3. Запустити сайт
-Найпростіший спосіб:
-1. Відкрити папку проєкту у Visual Studio Code.
-2. Встановити розширення Live Server.
-3. Натиснути правою кнопкою на index.html.
-4. Вибрати Open with Live Server.
-
 ЩО РЕАЛІЗОВАНО
 1. Головна сторінка з описом системи.
 2. Список діючих об'єктів:
